@@ -114,14 +114,3 @@ class DataTransformation:
             )
         except Exception as e:
             raise CustomException(e,sys)
-        #**********NOTES*********
-        #(ColumnTransformer) used to create pipelines
-        ##(SimpleImputer) used for handling missing data in datasets
-        # (Pipeline) from the sklearn.pipeline module is used to assemble several
-## steps that can be cross-validated together while setting different parameters. A Pipeline allows you to chain 
-# multiple steps together, ensuring that the sequence of operations is followed, and reducing the likelihood
-# of data leakage between training and testing steps.
- # (OneHotEncoder)-Converts categorical variables into a format that can be provided to ML algorithms
- # to do a better job in prediction (creates binary columns for each category).
-
-        
